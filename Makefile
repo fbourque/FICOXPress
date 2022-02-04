@@ -1,2 +1,2 @@
 all:
-  echo "Hello CI from Makefile"
+	echo "Hello CI from Makefile"
