@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 ENV PYTHONUNBUFFERED=1
-RUN apt update
+#RUN apt update
 RUN apt install python3-pip
 RUN pip install xpress
 
