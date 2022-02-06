@@ -14,14 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-#    - name: configure
-#      run: ./configure
+    - name: Build container
+      run: make build_container
       
-    - name: Install dependencies
-      run: make
-      
-#    - name: Run check
-#      run: make check
-      
-#    - name: Run distcheck
-#      run: make distcheck
+    - name: Run test
+      run: make test

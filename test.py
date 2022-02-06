@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 import xpress as xp
 import random
@@ -17,4 +17,6 @@ def xpress_test(num_vars: int, num_constraints: int) -> None:
     problem.solve()
 
 if __name__ == "__main__":
-    xpress_test(num_vars = 1000, num_constraints = 50)
+    xpress_test(num_vars = 10, num_constraints = 2)
+#    xpress_test(num_vars = 1000, num_constraints = 50)
+#    xpress_test(num_vars = 5000, num_constraints = 50)

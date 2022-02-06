@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y software-properties-common gcc && \
 RUN apt-get update && apt-get install -y python3.6 python3-distutils python3-pip python3-apt
 RUN pip3 install xpress==8.13.3
 COPY test.py .
-CMD ./test.py
+RUN chmod a+x /test.py; ls -l /
 
 #FROM alpine:latest
 
