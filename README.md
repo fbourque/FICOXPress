@@ -21,7 +21,7 @@ This test is based on Ubuntu. It appears the FICOXpress library installer is sen
  `apt-get install python3.6 python3-pip`
 
  - Install FICOXpress library
- `apt-get install xpress==8.13.3
+ `apt-get install xpress==8.13.3`
 
 ## Makefile targets
 - all
