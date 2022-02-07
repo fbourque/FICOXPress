@@ -38,3 +38,7 @@ It is recommended to use a Linux VM on your MacOS so you can ensure you can test
 - Configure VirtualBox with at least 15GB disk space for the VM or else you'll run out of space
 - Configure the clipboard to be bidirectional
   - You need to install the VirtualBox client extensions in your linux Host for the clipboard to work - it will add an ISO to your box and the installation will start automatically
+
+# Docker on Desktop devserver
+Docker only support cgroup v1 and hence the kernel need to be downgraded as Fedora uses cgroups v2
+Instructions [here](https://www.linuxuprising.com/2019/11/how-to-install-and-use-docker-on-fedora.html)
