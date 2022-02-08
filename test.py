@@ -7,6 +7,9 @@ def xpress_test(num_vars: int, num_constraints: int) -> None:
     random.seed(0)
 
     problem = xp.problem()
+    problem.controls.maxtime = 30  # stop after one minute
+    problem.controls.miprelstop = 0.0034  # stop after converged within 3.4%
+
     binvars = [xp.var(vartype=xp.binary) for _i in range(num_vars)]
     problem.addVariable(binvars)
 
@@ -17,6 +20,6 @@ def xpress_test(num_vars: int, num_constraints: int) -> None:
     problem.solve()
 
 if __name__ == "__main__":
-    xpress_test(num_vars = 10, num_constraints = 2)
-#    xpress_test(num_vars = 1000, num_constraints = 50)
+#    xpress_test(num_vars = 10, num_constraints = 2)
+    xpress_test(num_vars = 1000, num_constraints = 50)
 #    xpress_test(num_vars = 5000, num_constraints = 50)
